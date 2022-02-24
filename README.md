@@ -1,37 +1,45 @@
 <div align="center">
-# PROJECT
-## Thiết kế tích hợp module truyền thông IoT công nghiệp cho thiết bị Shinko BCS2
+
+## PROJECT: Thiết kế hệ thống Scada
 </br>
-<img align="center" alt="GIF" height="400px" src="./" />
+<img align="center" alt="GIF" width="500px" src="./Hinh%20anh/78985569_2653690294669675_5720538242294480896_n.jpg" />
 </div>
 
 ---
 ## Công nghệ sử dụng
-### HARDWARE
-- Vi điều khiển ESP32
+### Hardware
+- Vi điều khiển ESP8266
 - Bộ điều khiển nhiệt độ Shinko BCS2
 - Module: SIM, LAN, Nguồn,...
-### SOFTWARE
+### Software
+- Phần mềm Scade: MyScada
+- Firmware PLC for MCU: OpenPLC
 - IDE: Arduino IDE
--
 ---
 
 ## Yêu cầu đồ án
 &nbsp;
-<h1 align="center">PROJECT Phát triển ứng dụng Web</h1>
-> Thiết kế tích hợp module truyền thông IoT công nghiệp cho thiết bị Shino BCS2
+- Xây dựng hệ SCADA sử dụng vi điều khiển mô phỏng PLC, có đầy đủ chân vào ra digital và analog… có thể lập trình bằng ngôn ngữ ladder
+- Sử dụng các giao thức truyền thông công nghiệp
 
-- Điện áp ngõ vào 220VAC
-- Kết nối Modbus-RTU thiết bị BCS2
-- Chức năng log dữ liệu 4-20mA tại chỗ vào thẻ nhớ qua file 420mA *.txt
-    - Thời gian lưu dữ liệu vào file txt cài đặt được 1 phút, 5 phút, 10 phút, 15
-phút hoặc 20 phút/lần.
-- Giao tiếp truyền nhận dữ liệu qua LAN/WIFI/4G (Dùng IC, Chip)
-- Cấu hình thông số thiết bị qua webserver
-- Chức năng gửi file dữ liệu 4-20mA *.txt qua giao thức FTP
-    - Truyền dữ liệu theo phương thức FTP tới địa chỉ máy chủ FTP bằng tài
-khoản và địa chỉ FTP do Shinko cung cấp
-    - Dữ liệu được truyền về VPS có khoảng thời gian truyền cài đặt được 1
-phút, 5 phút, 10,15 phút hoặc 20 phút/lần.
-    - Cầu hình 2 tài khoản FTP
-- Đọc File *.txt từ VPS
+---
+<div align="center">
+
+## Tổng kết
+
+<img align="center" alt="GIF" width="500px" src="./Hinh%20anh/IMG_20191116_150918.jpg" />
+</div>
+</br>
+- Hoàn thành Hệ thống tưới nhỏ giọt với Với hệ thống đã xây dựng
+
+#### Chức năng:
+- Hệ thống có thể điều khiển, theo dõi, và giám sát qua web application
+- Có thể quản lý nhiều PLC kết nối tới hệ thống
+
+## Kết quả đạt được:
+### PLC
+- Sản phẩm PLC thiết kế từ vi điều khiển có thể lập trình bằng ngôn ngữ ladder, các in/out có được cách ly, có thể đọc được cảm biến analog
+- Kết nối MODBUS RTU, MODBUS TCP/IP
+### Hệ thống scada
+- Có thể quản lý nhiều PLC kết nối tới hệ thống
+- Kết nối theo chuẩn MODBUD RTU
